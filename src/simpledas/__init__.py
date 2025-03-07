@@ -10,6 +10,6 @@ except importlib.metadata.PackageNotFoundError:
     __version__ = "unknown"
 
 try:
-    __author__ = importlib.metadata.metadata(__name__)["Author"]
+    __author__ = importlib.metadata.metadata(__name__)["Authors"]
 except (importlib.metadata.PackageNotFoundError, KeyError):
     __author__ = "Ole Henrik Waagaard"
